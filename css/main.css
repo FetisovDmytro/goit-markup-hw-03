@@ -1,0 +1,256 @@
+:root {
+    --title-color :#212121 ;
+    --text-color:#757575 ;
+    --logo-text: #000000 ;
+    --white-bgc: #FFFFFF ;
+    --bgc-hero-title: #2F303A ;
+    --bgc-color:#F5F5F5 ;
+    --bgc-comands : #F5F4FA;
+    --Blue-color: #2196F3;
+    --bgc-btn-act:#188CE8 ;
+    --color-adrsf:  rgba(255, 255, 255, 0.6);
+}
+
+/* Roboto 400 . 500. 700 . 900/ relawey 700*/
+
+/* Тіло */
+body {
+    background-color: var(--white-bgc);
+    color: var(--title-color);
+    
+
+    font-family: Roboto , sans-serif ;
+    
+}
+
+.list {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Site-nav */
+.menu {
+    background-color: var(--white-bgc);
+}
+/* Логотип */
+.logo {
+    color: var(--logo-text);
+    font-family: 'Raleway';
+ 
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,9;
+    letter-spacing: 0.03em;
+}
+
+/* Навігація */
+.menu-nav .link {
+    color: var(--title-color);
+
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+/* Ховер навігації */
+.menu-nav .link:hover , .menu-nav .link:focus  {
+ color:var(--Blue-color)
+}
+
+.navig .current {
+    color: var(--Blue-color);
+}
+
+/* Контакти */
+.cont-nav  {
+    color: var(--text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.email {
+    color: var(--text-color);
+}
+
+
+.cont-nav .email:hover ,.cont-nav .email:focus {
+color: var(--Blue-color);
+}
+
+/* Герой */
+
+.hero1 {
+    background-color: var(--bgc-hero-title);
+    
+}
+
+.hero1-title {
+    color: var(--white-bgc);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+/* Головна кнопка */
+.hero1-btn {
+    background-color:var(--Blue-color) ;
+    color: var(--white-bgc);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.hero1-btn:hover {
+    background-color: var(--bgc-btn-act);
+    color: var(--white-bgc);
+}
+
+/* Переваги */
+
+.section1-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.section1-text {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/*  Види робот */
+
+.section2-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Наша команда  */
+
+.section3 {
+    background-color: var(--bgc-comands);
+}
+
+.section3-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.section4-title {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.section4-text {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    }
+
+    /* Footer */
+
+    .footer {
+        background-color: var(--bgc-hero-title);
+    }
+
+.foot-logo {
+    color: var(--white-bgc);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.foot-adrs {
+    color: var(--white-bgc);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.foot-text {
+    color: var(--color-adrsf);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+} 
+
+
+
+/* Оформлення Портфоліо */
+
+.btn {
+    background-color: var(--bgc-comands);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    /* identical to box height, or 162% */
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--Blue-color);
+    color: var(--white-bgc);
+}
+
+.ex-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+}
+
+.ex-text {
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.03em;
+}
+
+.foot-adrs:hover ,.foot-text:hover {
+color: var(--Blue-color);
+}
