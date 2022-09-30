@@ -155,12 +155,14 @@ color: var(--Blue-color);
 .hero1 {
     text-align: center;
     background-color: var(--bgc-hero-title);
-    
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero1-title {
     margin-top: 0;
     margin-bottom: 30px;
+    
     color: var(--white-bgc);
     font-weight: 900;
     font-size: 44px;
@@ -296,6 +298,7 @@ color: var(--Blue-color);
 .section4-title {
     margin: 0;
     margin-bottom: 10px;
+    padding-top: 30px;
     color: var(--title-color);
     font-weight: 500;
     font-size: 16px;
@@ -342,7 +345,7 @@ color: var(--Blue-color);
 }
 
 .foot-adrs {
-    margin-bottom: 9px;
+    padding-bottom: 9px;
 
     color: var(--white-bgc);
     font-style: normal;
@@ -352,7 +355,7 @@ color: var(--Blue-color);
 }
 
 .foot-text {
-    padding-bottom: 60px;
+  
     color: var(--color-adrsf);
     font-style: normal;
     font-size: 14px;
@@ -360,13 +363,38 @@ color: var(--Blue-color);
     letter-spacing: 0.03em;
 } 
 
+.foot-text:last-child {
+    padding-bottom: 60px;
+}
 
 
+
+/* Флекс для кнопок портфолио */
+
+.flex-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-f{
+    margin-right: 8px;
+}
+
+.btn-f:last-child{
+    margin-right: 0;
+}
 /* Оформлення Портфоліо */
 
-.btn {
-    border: 1px solid transparent;
+.flex-btn {
+    margin-top: 0;
+    margin-bottom: 34px;
+    padding-top: 94px;
+}
 
+.btn {
+    
+    border: 1px solid transparent;
+    border-radius: 4px;
 
     background-color: var(--bgc-comands);
     font-weight: 500;
@@ -381,6 +409,28 @@ color: var(--Blue-color);
 .btn:hover {
     background-color: var(--Blue-color);
     color: var(--white-bgc);
+}
+
+
+/* Флекс для прикладів */
+
+.examples {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.examples-flex {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.examples-flex:nth-child(3n){
+margin-right: 0;
+}
+
+.examples-flex:nth-last-child(-n+3){
+    margin-bottom: 0;
 }
 
 .ex-title {
