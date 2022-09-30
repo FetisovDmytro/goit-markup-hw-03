@@ -25,10 +25,29 @@ body {
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+.section {
+    padding-top: 94px ;
+    padding-bottom: 94px;
+}
+
+
+/* Контейнер навігації */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+   
 }
 
 /* Site-nav */
@@ -37,6 +56,8 @@ a {
 }
 /* Логотип */
 .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: var(--logo-text);
     font-family: 'Raleway';
  
@@ -46,8 +67,51 @@ a {
     letter-spacing: 0.03em;
 }
 
+
+
+/* Флекс навігація*/
+
+.main-nav {
+    display: flex;
+    align-items: center;
+   
+}
+
+.menu-nav{
+    display: flex;
+    align-items: center;
+   
+}
+
+.navig {
+    display: flex;
+    margin-left: 93px;
+}
+
+.cont-nav {
+    display: flex;
+    margin-left: auto;
+    
+}
+/* Маржин вправо */
+.navig .item  {
+    margin-right: 50px;
+}
+
+/* Убрати відступ */
+.navig .item :last-child  {
+    margin-right: 0%;
+}
+
+
+.cont-nav .item + .item {
+    margin-left: 50px;
+}
 /* Навігація */
 .menu-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--title-color);
 
 
@@ -67,6 +131,8 @@ a {
 
 /* Контакти */
 .cont-nav  {
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--text-color);
 
     font-weight: 500;
@@ -87,11 +153,14 @@ color: var(--Blue-color);
 /* Герой */
 
 .hero1 {
+    text-align: center;
     background-color: var(--bgc-hero-title);
     
 }
 
 .hero1-title {
+    margin-top: 0;
+    margin-bottom: 30px;
     color: var(--white-bgc);
     font-weight: 900;
     font-size: 44px;
@@ -102,13 +171,18 @@ color: var(--Blue-color);
 }
 /* Головна кнопка */
 .hero1-btn {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 10px 32px ;
+    min-width: 216px;
+
     background-color:var(--Blue-color) ;
     color: var(--white-bgc);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
+    
+  
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
@@ -119,9 +193,27 @@ color: var(--Blue-color);
     color: var(--white-bgc);
 }
 
-/* Переваги */
 
+/* Флекс для переваг */
+.section1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.section1 .item1 {
+    margin-right: 30px;
+}
+
+.section1 .item1:last-child {
+    margin-right: 0%;
+}
+
+/* Переваги */
 .section1-title {
+    margin-top: 0;
+    margin-bottom: 10px;
     color: var(--title-color);
     font-weight: 700;
     font-size: 14px;
@@ -131,6 +223,8 @@ color: var(--Blue-color);
 }
 
 .section1-text {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--text-color);
     font-weight: 400;
     font-size: 14px;
@@ -138,15 +232,47 @@ color: var(--Blue-color);
     letter-spacing: 0.03em;
 }
 
+/* Флекс для вид робот */
+
+.section2 {
+    display: flex;
+}
+
+.section2 .item1 {
+    margin-right: 30px;
+}
+
+.section2 .item1:last-child {
+    margin-right: 0%;
+}
+
+
 /*  Види робот */
 
 .section2-title {
+    margin-top: 0;
+    margin-bottom: 50px;
     color: var(--title-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+
+/* Флекс для команди */
+
+.section3 {
+    display: flex;
+}
+
+.section3 .sectiov-div {
+    margin-right: 30px;
+}
+
+.section3 .item1:last-child {
+    margin-right: 0%;
 }
 
 /* Наша команда  */
@@ -154,8 +280,11 @@ color: var(--Blue-color);
 .section3 {
     background-color: var(--bgc-comands);
 }
-
+/* Заголовок команди */
 .section3-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
     color: var(--title-color);
     font-weight: 700;
     font-size: 36px;
@@ -163,8 +292,10 @@ color: var(--Blue-color);
     text-align: center;
     letter-spacing: 0.03em;
 }
-
+/* Ім'я працівників */
 .section4-title {
+    margin: 0;
+    margin-bottom: 10px;
     color: var(--title-color);
     font-weight: 500;
     font-size: 16px;
@@ -172,8 +303,10 @@ color: var(--Blue-color);
     text-align: center;
     letter-spacing: 0.03em;
 }
-
+/* Ким працюють */
 .section4-text {
+    margin-top: 0%;
+    
     color: var(--text-color);
     font-weight: 400;
     font-size: 16px;
@@ -182,6 +315,13 @@ color: var(--Blue-color);
     letter-spacing: 0.03em;
     }
 
+
+/* Флекс для футера */
+
+    .foot-cont {
+        display: flex;
+        flex-direction: column;
+    }
     /* Footer */
 
     .footer {
@@ -189,6 +329,10 @@ color: var(--Blue-color);
     }
 
 .foot-logo {
+    display: block;
+    padding-top: 60px;
+    margin-bottom: 20px;
+
     color: var(--white-bgc);
     font-family: 'Raleway';
     font-weight: 700;
@@ -198,6 +342,8 @@ color: var(--Blue-color);
 }
 
 .foot-adrs {
+    margin-bottom: 9px;
+
     color: var(--white-bgc);
     font-style: normal;
     font-size: 14px;
@@ -206,6 +352,7 @@ color: var(--Blue-color);
 }
 
 .foot-text {
+    padding-bottom: 60px;
     color: var(--color-adrsf);
     font-style: normal;
     font-size: 14px;
@@ -218,6 +365,9 @@ color: var(--Blue-color);
 /* Оформлення Портфоліо */
 
 .btn {
+    border: 1px solid transparent;
+
+
     background-color: var(--bgc-comands);
     font-weight: 500;
     font-size: 16px;
