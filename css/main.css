@@ -44,7 +44,7 @@ a {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
    
@@ -107,6 +107,8 @@ a {
 .cont-nav .item + .item {
     margin-left: 50px;
 }
+
+
 /* Навігація */
 .menu-nav .link {
     display: block;
@@ -147,8 +149,9 @@ a {
 
 
 .cont-nav .email:hover ,.cont-nav .email:focus {
-color: var(--Blue-color);
-}
+    color: var(--Blue-color);
+    }
+    
 
 /* Герой */
 
@@ -434,6 +437,10 @@ margin-right: 0;
 }
 
 .ex-title {
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding-top: 30px;
+
     color: var(--title-color);
     font-weight: 700;
     font-size: 18px;
@@ -443,6 +450,8 @@ margin-right: 0;
 }
 
 .ex-text {
+    margin-top: 0;
+    margin-bottom: 20px;
     color: var(--text-color);
     font-weight: 400;
     font-size: 16px;
