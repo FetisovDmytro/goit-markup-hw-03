@@ -151,7 +151,10 @@ a {
 .cont-nav .email:hover ,.cont-nav .email:focus {
     color: var(--Blue-color);
     }
-    
+
+ .cont-nav li:hover , .cont-nav:focus {
+    color: var(--Blue-color);
+ }   
 
 /* Герой */
 
