@@ -74,6 +74,7 @@ a {
 .main-nav {
     display: flex;
     align-items: center;
+    border: 1px solid #ECECEC;
    
 }
 
@@ -394,7 +395,7 @@ a {
 .flex-btn {
     margin-top: 0;
     margin-bottom: 34px;
-    padding-top: 94px;
+    
 }
 
 .btn {
@@ -423,13 +424,16 @@ a {
 .examples {
     display: flex;
     flex-wrap: wrap;
-    
+   
 }
 
 .examples-flex {
+    
     margin-right: 30px;
     margin-bottom: 30px;
 }
+
+
 
 .examples-flex:nth-child(3n){
 margin-right: 0;
