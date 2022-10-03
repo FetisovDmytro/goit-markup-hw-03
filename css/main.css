@@ -38,6 +38,19 @@ a {
     padding-bottom: 94px;
 }
 
+.section:nth-child(3) {
+    padding-top: 0;
+}
+
+img {
+display:block; 
+max-width: 100%;
+height:auto;
+}
+
+.header {
+    border: 1px solid #ECECEC;
+}
 
 /* Контейнер навігації */
 
@@ -74,7 +87,7 @@ a {
 .main-nav {
     display: flex;
     align-items: center;
-    border: 1px solid #ECECEC;
+   
    
 }
 
@@ -100,10 +113,10 @@ a {
 }
 
 /* Убрати відступ */
-.navig .item :last-child  {
+
+.navig li:nth-child(3) {
     margin-right: 0%;
 }
-
 
 .cont-nav .item + .item {
     margin-left: 50px;
@@ -134,18 +147,18 @@ a {
 
 /* Контакти */
 .cont-nav  {
+  display: flex;
+  margin-left: auto;
+}
+
+.email ,.tel {
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--text-color);
-
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-
-.email {
-    color: var(--text-color);
 }
 
 
@@ -153,7 +166,7 @@ a {
     color: var(--Blue-color);
     }
 
- .cont-nav li:hover , .cont-nav:focus {
+ .cont-nav .tel:hover , .cont-nav .tel:focus {
     color: var(--Blue-color);
  }   
 
@@ -167,8 +180,12 @@ a {
 }
 
 .hero1-title {
+    width: 696px;
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+   
     
     color: var(--white-bgc);
     font-weight: 900;
@@ -274,6 +291,7 @@ a {
 
 .section3 {
     display: flex;
+   
 }
 
 .section3 .sectiov-div {
@@ -316,6 +334,8 @@ a {
 /* Ким працюють */
 .section4-text {
     margin-top: 0%;
+    margin-bottom: 0%;
+    padding-bottom: 30px;
     
     color: var(--text-color);
     font-weight: 400;
@@ -331,16 +351,19 @@ a {
     .foot-cont {
         display: flex;
         flex-direction: column;
+        gap:9px;
     }
     /* Footer */
 
     .footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
         background-color: var(--bgc-hero-title);
     }
 
 .foot-logo {
     display: block;
-    padding-top: 60px;
+    
     margin-bottom: 20px;
 
     color: var(--white-bgc);
@@ -370,9 +393,6 @@ a {
     letter-spacing: 0.03em;
 } 
 
-.foot-text:last-child {
-    padding-bottom: 60px;
-}
 
 
 
@@ -381,6 +401,7 @@ a {
 .flex-btn {
     display: flex;
     justify-content: center;
+    
 }
 
 .btn-f{
@@ -394,12 +415,12 @@ a {
 
 .flex-btn {
     margin-top: 0;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     
 }
 
 .btn {
-    
+    padding: 6px 22px;
     border: 1px solid transparent;
     border-radius: 4px;
 
@@ -424,6 +445,7 @@ a {
 .examples {
     display: flex;
     flex-wrap: wrap;
+    gap: 30px;
    
 }
 
@@ -443,10 +465,24 @@ margin-right: 0;
     margin-bottom: 0;
 }
 
+.ex-div {
+        padding: 20px 24px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #EEEEEE;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-inline-start-color: #EEEEEE;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #EEEEEE;
+}
+
+
 .ex-title {
     margin-top: 0;
     margin-bottom: 4px;
-    padding-top: 30px;
+   
 
     color: var(--title-color);
     font-weight: 700;
@@ -457,8 +493,7 @@ margin-right: 0;
 }
 
 .ex-text {
-    margin-top: 0;
-    margin-bottom: 20px;
+   margin: 0%;
     color: var(--text-color);
     font-weight: 400;
     font-size: 16px;
