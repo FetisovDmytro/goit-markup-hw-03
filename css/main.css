@@ -24,9 +24,17 @@ body {
 }
 
 .list {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.item1 {
+    margin-right: 30px;
+}
+ .item1:last-child {
+    margin-right: 0%;
 }
 
 a {
@@ -220,21 +228,9 @@ height:auto;
 }
 
 
-/* Флекс для переваг */
-.section1 {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
 
-.section1 .item1 {
-    margin-right: 30px;
-}
 
-.section1 .item1:last-child {
-    margin-right: 0%;
-}
+
 
 /* Переваги */
 .section1-title {
@@ -258,19 +254,10 @@ height:auto;
     letter-spacing: 0.03em;
 }
 
-/* Флекс для вид робот */
 
-.section2 {
-    display: flex;
-}
 
-.section2 .item1 {
-    margin-right: 30px;
-}
 
-.section2 .item1:last-child {
-    margin-right: 0%;
-}
+
 
 
 /*  Види робот */
@@ -287,26 +274,17 @@ height:auto;
 }
 
 
-/* Флекс для команди */
 
-.section3 {
-    display: flex;
-   
-}
 
-.section3 .sectiov-div {
-    margin-right: 30px;
-}
 
-.section3 .item1:last-child {
-    margin-right: 0%;
-}
+
 
 /* Наша команда  */
 
-.section3 {
-    background-color: var(--bgc-comands);
+.bgc-team {
+    background-color:var(--bgc-comands);
 }
+
 /* Заголовок команди */
 .section3-title {
     margin-top: 0;
